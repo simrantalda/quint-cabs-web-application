@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.quint.cabs.QuintCabsWebApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.534 s - in com.quint.cabs.QuintCabsWebApplicationTests

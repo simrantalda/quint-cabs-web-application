@@ -11,6 +11,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -30,6 +31,12 @@ public class QuintCabController {
 
 	private static final Logger logger = LogManager
 			.getLogger(QuintCabController.class);
+	
+	@RequestMapping("/")
+	public String index() {
+		return "Greetings from Spring Boot!";
+	}
+
 
 	@PostMapping(value = "/get-cab", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<QuintCabsResponse<RideDetails>> processGetCabRequest(@RequestBody final Client client) {

@@ -16,6 +16,8 @@
 	<description>quint-cabs-web-application</description>
 
 	<properties>
+		<start-class>com.quint.cabs</start-class>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>11</java.version>
 	</properties>
 
@@ -54,6 +56,12 @@
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
